@@ -1,9 +1,9 @@
-# Day16-A20-2A202600637-Nguyễn Văn Dương
+# Day16-A20-XXXXX-HoVaTen
 
 ## Thông tin học viên
 
-- Mã học viên: A20-2A202600637
-- Họ tên: Nguyễn Văn Dương
+- Mã học viên: A20-XXXXX
+- Họ tên: Chưa điền
 - Track: AI Product Strategy
 
 ## File nộp
@@ -13,6 +13,7 @@
 
 ## Ghi chú
 
-- Lab 1 đã hoàn thành với case: FPT Software / FPT Corporation - mô hình outsource phần mềm bị thị trường đánh giá lại dưới áp lực của AI coding.
+- Lab 1 đã hoàn thành với case: GreenSM/Xanh SM - rủi ro chất lượng dịch vụ khi vận hành nền tảng gọi xe điện ở quy mô lớn.
+- Lab 2 phân tích dự án: AI Phân Tích Phản Hồi & Đánh Giá Để Nâng Chất Lượng Dịch Vụ.
 - Tài liệu tham khảo dùng cho Lab 2: `Strategyn_JTBD_Playbook.pdf` nếu giảng viên gửi kèm, không bắt buộc đưa vào repo.
 

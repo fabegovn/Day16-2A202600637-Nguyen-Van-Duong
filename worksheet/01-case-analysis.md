@@ -8,103 +8,103 @@ nop-cuoi: Có - đây là file nộp cuối của Lab 1
 
 # Lab 1 - Case Analysis / Phân tích "tử huyệt" chiến lược
 
-**Case đã chọn:** FPT Software / FPT Corporation - mô hình outsource phần mềm bị thị trường đánh giá lại dưới áp lực của AI coding  
-**Người làm:** Nguyễn Văn Dương  
-**Bàn / nhóm bàn:** 
+**Case đã chọn:** GreenSM / Xanh SM - AI phân tích phản hồi & đánh giá để nâng chất lượng dịch vụ  
+**Người làm:**   
+**Bàn / nhóm bàn:**   
 **Ngày:** 18/06/2026
 
 ## Bước 0 - Chọn case thật nhanh
 
-- **Case / sản phẩm / công ty:** FPT Software, mảng dịch vụ CNTT và outsource phần mềm của FPT Corporation.
-- **AI / platform / sản phẩm mới tạo áp lực:** GitHub Copilot, ChatGPT, Claude/Cursor và các agent coding có khả năng tạo code, test, debug, viết tài liệu.
+- **Case / sản phẩm / công ty:** GreenSM/Xanh SM, nền tảng taxi điện và gọi xe điện của GSM.
+- **AI / platform / sản phẩm mới tạo áp lực:** AI phân tích phản hồi khách hàng, đánh giá chuyến đi, review app, social listening và hệ thống phát hiện lỗi dịch vụ theo thời gian gần thực.
 - **Vì sao tôi chọn case này?**  
-  > FPT từng được thị trường định giá như một công ty công nghệ tăng trưởng cao nhờ lợi thế nhân lực kỹ sư, năng lực delivery offshore và khách hàng quốc tế. AI không "giết" FPT ngay, nhưng làm thay đổi cách khách hàng mua dịch vụ outsource: họ không chỉ mua giờ công lập trình nữa, mà đòi hỏi năng suất, outcome và năng lực AI-native.
+  > GreenSM tăng trưởng nhanh nhờ định vị "xanh", đội xe điện đồng nhất và trải nghiệm mới. Nhưng khi quy mô xe, tài xế, thành phố và kênh phản hồi tăng lên, chất lượng dịch vụ không thể chỉ quản lý bằng đọc review thủ công. AI làm thay đổi kỳ vọng: khách hàng không chỉ muốn đi xe sạch, mà muốn vấn đề được phát hiện, phản hồi và sửa rất nhanh.
 
 ## Bước 1 - Gom 3-5 bằng chứng chốt
 
 | # | Bằng chứng / số liệu chốt | Vì sao số này quan trọng? | Nguồn |
 |---|---|---|---|
-| E1 | FPT Software là nhà cung cấp dịch vụ CNTT/toàn cầu và outsource phần mềm, có mặt tại hơn 30 quốc gia, hơn 80 văn phòng, khoảng 30.000 nhân sự; doanh thu Global IT Services đã vượt mốc 1 tỷ USD năm 2023. | Cho thấy "case trước AI" của FPT dựa nhiều vào quy mô nhân lực, delivery offshore và khả năng bán dịch vụ phần mềm cho khách hàng quốc tế. | FPT Software overview: https://en.wikipedia.org/wiki/FPT_Software |
-| E2 | Năm 2024, FPT/FPT Software tiếp tục báo cáo tăng trưởng mạnh, doanh thu 2024 khoảng 2,47 tỷ USD và lợi nhuận trước thuế khoảng 434,57 triệu USD; cùng năm đó FPT xây 2 AI Factories tại Việt Nam và Nhật Bản với NVIDIA. | Đây là bằng chứng hai mặt: FPT vẫn là công ty tốt, nhưng bản thân FPT cũng phải chuyển sang AI infrastructure/AI service để tránh bị commoditize. | FPT Corporation / FPT Software summaries: https://en.wikipedia.org/wiki/FPT_Corporation |
-| E3 | Nghiên cứu về GitHub Copilot cho thấy lập trình viên hoàn thành tác vụ nhanh hơn 55,8% trong thí nghiệm có kiểm soát. | Nếu AI làm tăng năng suất lập trình, khách hàng outsource sẽ hỏi lại: vì sao vẫn trả tiền theo số người/số giờ như cũ? | "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot": https://arxiv.org/abs/2302.06590 |
-| E4 | Stack Overflow Developer Survey 2025 được báo cáo là 84% developer đang dùng hoặc dự định dùng AI tools; tuy nhiên 46% không tin độ chính xác của output AI. | AI đã vào workflow đại trà, nhưng chưa thay thế hoàn toàn con người. Lợi thế mới không phải "có nhiều coder" mà là "biết kết hợp AI + governance + domain expertise". | ITPro tổng hợp Stack Overflow Survey 2025: https://www.itpro.com/software/development/developers-arent-quite-ready-to-place-their-trust-in-ai-nearly-half-say-they-dont-trust-the-accuracy-of-outputs-and-end-up-wasting-time-debugging-code |
-| E5 | Giá cổ phiếu FPT trên HOSE có giai đoạn giảm đáng kể sau vùng đỉnh 2024/2025; tôi xem đây là tín hiệu thị trường đang chiết khấu lại kỳ vọng tăng trưởng/định giá, trong đó AI là một rủi ro chiến lược lớn với mô hình outsource. | Giá cổ phiếu không chứng minh AI là nguyên nhân duy nhất, nhưng là dấu hiệu nhà đầu tư bắt đầu hỏi: tăng trưởng nhân lực và billable hours còn bền vững không khi AI làm giảm giá trị coding commodity? | Biểu đồ HOSE:FPT trên TradingView/SSI/iBoard hoặc trang chứng khoán đang dùng khi nộp bài. |
+| E1 | GSM/GreenSM được thành lập năm 2023, vận hành Xanh SM, công ty taxi thuần điện đầu tiên tại Việt Nam, ban đầu với quy mô đầu tư lớn gồm ô tô điện và xe máy điện VinFast. | Cho thấy case trước AI của GreenSM thắng nhờ định vị xe điện, thương hiệu xanh, đội xe mới và khả năng triển khai nhanh. | Green SM overview: https://en.wikipedia.org/wiki/Green_SM |
+| E2 | Xanh SM chính thức vận hành tại Hà Nội ngày 14/04/2023 và mở rộng sang nhiều thị trường như Lào, Indonesia, Philippines trong các năm sau đó. | Tăng trưởng địa lý nhanh làm bài toán kiểm soát chất lượng dịch vụ phức tạp hơn: nhiều tài xế, nhiều văn hóa khách hàng, nhiều loại phản hồi. | Green SM history: https://en.wikipedia.org/wiki/Green_SM |
+| E3 | Theo dữ liệu công khai được tổng hợp, đến khoảng 05/2024 Xanh SM có hơn 30.000 taxi điện và chiếm tỷ trọng lớn trong thị trường taxi Việt Nam. | Quy mô lớn biến phản hồi khách hàng thành dữ liệu vận hành chiến lược. Nếu không phân tích nhanh, lỗi lặp lại sẽ lan rộng trước khi đội vận hành kịp xử lý. | Green SM history: https://en.wikipedia.org/wiki/Green_SM |
+| E4 | Nghiên cứu về review trên Google Play chỉ ra review/rating ảnh hưởng đến quyết định tải app; phản hồi review tốn thời gian nên chỉ một phần nhỏ developer thường xuyên phản hồi. | Với app gọi xe, rating thấp, phàn nàn chưa xử lý và review tiêu cực có thể ảnh hưởng trực tiếp đến niềm tin và conversion. AI có thể giúp ưu tiên phản hồi cần xử lý. | "Prioritizing App Reviews for Developer Responses on Google Play": https://arxiv.org/abs/2502.01520 |
+| E5 | Nghiên cứu về app reviews cho thấy rating sao có thể lệch với nội dung review; hệ thống ML/deep learning có thể phát hiện sentiment/rating phù hợp với độ chính xác cao trong bối cảnh nghiên cứu. | Nếu chỉ nhìn điểm sao trung bình, GreenSM có thể bỏ sót nguyên nhân thật: thái độ tài xế, chờ lâu, giá, app lỗi, an toàn, vệ sinh xe, hoặc xử lý khiếu nại chậm. | "Fault in your stars: An Analysis of Android App Reviews": https://arxiv.org/abs/1708.04968 |
 
 ### 3 phát hiện ban đầu
 
 1. **Case này từng thắng nhờ...**  
-   > khả năng tuyển, đào tạo và quản trị số lượng lớn kỹ sư phần mềm với chi phí cạnh tranh, cộng với năng lực delivery cho khách hàng Nhật, Mỹ, châu Âu.
+   > định vị taxi điện khác biệt, đội xe mới, màu thương hiệu dễ nhận biết, tốc độ mở rộng nhanh và liên kết với hệ sinh thái VinFast/Vingroup.
 2. **AI shock làm thay đổi...**  
-   > đơn vị giá trị trong outsource: từ "số giờ lập trình/số người trong team" sang "tốc độ ra output, chất lượng, IP, domain knowledge và trách nhiệm kết quả".
+   > cách quản lý chất lượng dịch vụ: từ xử lý phản hồi thủ công, chậm và rời rạc sang phát hiện pattern, ưu tiên vấn đề và đề xuất hành động gần real-time.
 3. **Dấu hiệu mạnh nhất cho thấy luật chơi mới là...**  
-   > AI coding tools đã vào workflow đại trà, FPT cũng phải đầu tư AI Factory/NVIDIA; nghĩa là đây không còn là xu hướng bên lề mà là nền tảng cạnh tranh mới.
+   > phản hồi của khách hàng không còn là "ý kiến sau chuyến" mà trở thành dữ liệu vận hành. Ai phân tích feedback nhanh hơn sẽ sửa dịch vụ nhanh hơn và giữ niềm tin tốt hơn.
 
 ## Bước 2 - Viết 4 nhận định bắt buộc
 
 ### Nhận định 1 - Trước AI, case này thắng nhờ giả định gì?
 
 **Trả lời của tôi:**  
-> Trước AI, FPT Software thắng nhờ giả định rằng khách hàng quốc tế cần "thuê năng lực lập trình bên ngoài" với chi phí thấp hơn, quy mô linh hoạt hơn và delivery on-time hơn so với tự xây team nội bộ. Giá trị lõi của FPT là quy mô kỹ sư, process delivery, quan hệ khách hàng, năng lực tiếng Nhật/thị trường Nhật và khả năng chạy dự án lớn.
+> Trước AI, GreenSM thắng nhờ giả định rằng khách hàng sẽ chọn dịch vụ gọi xe khác biệt nếu xe sạch, mới, chạy điện, thương hiệu mạnh và trải nghiệm ban đầu tốt hơn taxi truyền thống. Giá trị lõi là đội xe điện đồng nhất, hình ảnh xanh, khả năng phủ xe nhanh và cảm giác dịch vụ hiện đại.
 >
-> Job-to-be-done mà khách hàng "thuê" FPT làm là: biến nhu cầu số hóa/phần mềm thành hệ thống chạy được mà không phải tự tuyển, đào tạo và quản trị toàn bộ đội ngũ kỹ thuật.
+> Job-to-be-done mà khách hàng "thuê" GreenSM làm là: di chuyển an toàn, đúng giờ, dễ đặt, giá chấp nhận được và có trải nghiệm dễ chịu hơn các lựa chọn gọi xe/taxi khác.
 
-**Bằng chứng đỡ nhận định này:** E1, E2
+**Bằng chứng đỡ nhận định này:** E1, E2, E3
 
 ### Nhận định 2 - Kỳ vọng người dùng và luật chơi cạnh tranh đã đổi ở đâu?
 
-**Shift kỳ vọng quan trọng nhất:** Làm xong giúp tôi / trả theo kết quả  
-**Competitive dynamic quan trọng nhất:** switching costs giảm và build-copy cycles tăng tốc
+**Shift kỳ vọng quan trọng nhất:** Phản hồi ngay / thấu hiểu ngữ cảnh  
+**Competitive dynamic quan trọng nhất:** data advantages tăng và switching costs giảm
 
 **Trả lời của tôi:**  
-> Khách hàng outsource không còn mặc định chấp nhận việc tăng headcount là cách chính để tăng output. Khi Copilot/ChatGPT/Claude có thể tạo code, test, refactor, viết tài liệu nhanh hơn, buyer sẽ kỳ vọng nhà cung cấp dịch vụ phải dùng AI để giao nhanh hơn, ít người hơn, minh bạch hơn và gắn với business outcome hơn.
+> Trong gọi xe, switching cost của khách hàng rất thấp: nếu chuyến đi tệ, app lỗi, tài xế cư xử không tốt hoặc khiếu nại không được xử lý, khách hàng có thể chuyển sang Grab, Be, taxi truyền thống hoặc phương tiện cá nhân ngay chuyến sau. Vì vậy chất lượng dịch vụ không chỉ nằm ở xe điện, mà nằm ở khả năng lắng nghe và sửa lỗi nhanh.
 >
-> Luật chơi cạnh tranh đổi từ "ai có nhiều kỹ sư hơn" sang "ai có workflow AI-native, data/domain context, quality gate và governance tốt hơn". Nếu FPT chỉ bán manpower, phần giá trị đó dễ bị ép giá; nếu FPT bán AI-enabled delivery và domain solution, FPT vẫn có cửa sống.
+> AI làm luật chơi đổi vì nền tảng nào đọc được hàng nghìn phản hồi, gom đúng chủ đề, phát hiện tài xế/khu vực/khung giờ có vấn đề và ưu tiên xử lý nhanh sẽ có lợi thế vận hành. Nếu GreenSM không biến feedback thành hành động, lợi thế "xe xanh" sẽ bị bào mòn bởi trải nghiệm không ổn định.
 
 **Bằng chứng đỡ nhận định này:** E3, E4, E5
 
 ### Nhận định 3 - Giả định nào không còn đúng nữa? Điều gì đã thay đổi vĩnh viễn?
 
 **Điều đã thay đổi vĩnh viễn theo tôi là:**  
-> Giả định "lập trình viên là đơn vị sản xuất chính và giờ công là đơn vị tính tiền tự nhiên" không còn chắc đúng. AI biến một phần coding, test, debug, document thành công việc có thể tự động hóa hoặc tăng tốc mạnh. Từ đây, khách hàng sẽ ngày càng hỏi về giá trị cuối cùng: thời gian ra sản phẩm, chất lượng, bảo mật, hiểu biết domain và khả năng chịu trách nhiệm.
+> Giả định "dịch vụ tốt có thể được quản lý chủ yếu bằng SOP, training và đọc khiếu nại thủ công" không còn đủ đúng khi nền tảng mở rộng nhanh. Ở quy mô hàng chục nghìn xe/chuyến/ngày, phản hồi khách hàng trở thành nguồn tín hiệu vận hành phải được phân tích liên tục.
 >
-> Phân khúc outsource vẫn tồn tại, nhưng cách phục vụ sẽ khác: ít giống "cho thuê coder" và giống "đối tác delivery có AI, có tài sản tái sử dụng, có chuyên môn ngành" hơn. Điều vĩnh viễn không phải là giá FPT giảm, mà là chuẩn mới trong đầu buyer: nhà cung cấp phần mềm phải chứng minh năng suất AI và outcome.
+> Điều thay đổi vĩnh viễn là chuẩn mới của khách hàng: họ kỳ vọng nền tảng hiểu vấn đề của họ rất nhanh, không bắt họ lặp lại khiếu nại nhiều lần, và có hành động cụ thể. Điểm khác biệt không chỉ là xe điện, mà là vòng lặp học hỏi từ phản hồi: nghe nhanh, hiểu đúng, sửa nhanh.
 
 **Bằng chứng đỡ nhận định này:** E3, E4, E5
 
 ### Nhận định 4 - Case này còn cứu được không? Nếu có, phải đổi bằng cách nào?
 
-**Verdict ban đầu của tôi:** Có nhưng phải đổi rất mạnh
+**Verdict ban đầu của tôi:** Có, nhưng phải biến feedback thành năng lực vận hành lõi
 
 **Trả lời của tôi:**  
-> FPT không phải case "chết vì AI"; đây là case "bị AI buộc phải đổi moat". FPT còn nhiều lợi thế: khách hàng lớn, uy tín delivery, thị trường Nhật, quy mô nhân lực, FPT Education và khả năng đầu tư hạ tầng AI. Nhưng nếu FPT tiếp tục để thị trường nhìn mình như công ty outsourcing theo billable headcount, valuation sẽ bị ép.
+> GreenSM có lợi thế lớn: thương hiệu nhận diện mạnh, đội xe điện, tốc độ phủ thị trường và dữ liệu chuyến đi/phản hồi rất giàu. Case này không phải "bị AI thay thế", mà là "nếu không dùng AI để quản lý chất lượng ở quy mô lớn thì lợi thế dịch vụ sẽ suy giảm".
 >
-> Cách đổi là chuyển từ labor arbitrage sang AI-native service: dùng AI để tăng năng suất nội bộ, đóng gói solution theo ngành, bán outcome/SLA thay vì chỉ bán số người, xây governance bảo mật cho enterprise, và biến AI Factory thành năng lực giao hàng thật chứ không chỉ là câu chuyện truyền thông.
+> Cách đổi là xây hệ thống AI phân tích phản hồi đa kênh: review app, rating chuyến, ticket CSKH, hotline, social media. Hệ thống cần phân loại vấn đề, đo severity, phát hiện pattern theo tài xế/khu vực/thời gian, đề xuất hành động cho vận hành và đóng vòng phản hồi với khách hàng.
 
-**Bằng chứng đỡ nhận định này:** E2, E3, E4
+**Bằng chứng đỡ nhận định này:** E3, E4, E5
 
 ## Tóm tắt cá nhân trước khi share trong bàn
 
-1. `Case này yếu đi vì...` FPT Software nếu chỉ được nhìn như nhà cung cấp giờ công lập trình sẽ bị AI coding tools làm giảm giá trị của phần coding commodity.
-2. `Điều thay đổi vĩnh viễn là...` buyer outsource sẽ đòi hỏi năng suất AI, delivery theo outcome và domain expertise, không còn mặc định trả tiền theo headcount.
-3. `Verdict của tôi là...` FPT còn cứu được, nhưng phải đổi từ labor outsourcing sang AI-native delivery partner.
+1. `Case này yếu đi vì...` GreenSM mở rộng nhanh nên chất lượng dịch vụ dễ không đồng đều nếu phản hồi khách hàng chỉ được xử lý thủ công và chậm.
+2. `Điều thay đổi vĩnh viễn là...` feedback không còn là dữ liệu hậu mãi, mà là dữ liệu vận hành phải được phân tích gần real-time.
+3. `Verdict của tôi là...` GreenSM còn rất nhiều lợi thế, nhưng phải biến AI phân tích phản hồi thành năng lực lõi để giữ chất lượng dịch vụ.
 
 ## Bước 3 - Share trong bàn
 
 | Người | Case | Bằng chứng mạnh nhất họ nêu | Điều họ cho là "thay đổi vĩnh viễn" | Verdict của họ |
 |---|---|---|---|---|
-| Bạn 1 | Chegg | Thuê bao giảm mạnh sau ChatGPT | Entry point học tập chuyển sang chatbot | Khó cứu nếu chỉ bán lời giải |
-| Bạn 2 | Stack Overflow | Developer hỏi AI thay vì lên forum | Knowledge Q&A bị AI chen vào workflow | Phải thành data/enterprise layer |
-| Bạn 3 | FPT outsourcing | AI coding tăng năng suất và FPT phải đầu tư AI Factory | Billable headcount không còn là moat đủ | Có nhưng phải đổi mạnh |
-| Bạn 4 | Jasper | Copywriting generic bị ChatGPT ép giá | Lớp vỏ prompt/content dễ bị commoditize | Phải đi vào workflow marketing sâu hơn |
+| Bạn 1 | GreenSM | Quy mô mở rộng nhanh và nhiều điểm chạm khách hàng | Feedback phải được xử lý như dữ liệu vận hành | Có thể mạnh hơn nếu dùng AI đúng |
+| Bạn 2 | Grab/Be | App gọi xe cạnh tranh bằng trải nghiệm và dữ liệu | Switching cost của khách hàng rất thấp | Ai phản hồi nhanh hơn sẽ giữ user tốt hơn |
+| Bạn 3 | App dịch vụ | Review app ảnh hưởng niềm tin người dùng | Rating sao không đủ, phải hiểu nội dung review | Cần AI phân loại và ưu tiên |
+| Bạn 4 | CSKH | Khiếu nại lặp lại làm mất niềm tin | Chăm sóc khách hàng phải proactive hơn | Cần đóng vòng phản hồi |
 
 **1. Bàn tôi thấy case nào có bằng chứng mạnh nhất? Vì sao?**  
-> Chegg và Stack Overflow có bằng chứng tác động trực tiếp hơn về user/traffic. Case FPT khó hơn vì giá cổ phiếu chỉ là tín hiệu gián tiếp, nhưng nó đáng giá vì cho thấy AI ảnh hưởng cả những công ty vẫn tăng trưởng tốt.
+> Case GreenSM có bằng chứng tốt về quy mô và tốc độ mở rộng. Tuy nhiên, bằng chứng về chất lượng dịch vụ cần bổ sung thêm dữ liệu thật từ app review, ticket CSKH hoặc khảo sát khách hàng để sắc hơn.
 
 **2. Có pattern nào lặp lại giữa nhiều case không?**  
-> Pattern lặp lại là AI chiếm entry point và làm giảm giá trị của tác vụ generic. Nơi nào sản phẩm chỉ bán "làm hộ một việc có thể prompt ra được", switching cost giảm rất nhanh. Nơi nào có dữ liệu riêng, workflow sâu, trust và accountability thì còn lợi thế.
+> Pattern chung là khi một dịch vụ số mở rộng nhanh, chất lượng không thể chỉ dựa vào quy trình thủ công. Nền tảng nào có vòng lặp feedback -> insight -> action nhanh hơn sẽ có lợi thế giữ khách hàng.
 
 **3. Một cảnh báo cho chính dự án của nhóm tôi là gì?**  
-> Đừng xây sản phẩm chỉ là lớp vỏ mỏng trên AI. Phải chọn một workflow có pain thật, có dữ liệu/ngữ cảnh riêng và có lý do để user tin kết quả hơn việc tự hỏi ChatGPT.
+> Đừng chỉ làm dashboard đẹp. Sản phẩm phải giúp đội vận hành biết vấn đề nào cần xử lý trước, ai chịu trách nhiệm, xử lý thế nào và kết quả có cải thiện không.
 
 ## Bước 4 - Chốt lại verdict cá nhân sau thảo luận
 
@@ -116,20 +116,20 @@ nop-cuoi: Có - đây là file nộp cuối của Lab 1
 
 ### Vì sao tôi giữ / đổi verdict?
 
-> Tôi đổi nhẹ vì bàn góp ý rằng không nên viết "giá cổ phiếu FPT giảm bởi AI" như một quan hệ nhân quả chắc chắn. Cách viết đúng hơn là: AI là một rủi ro chiến lược làm thị trường re-rating các công ty outsourcing; giá cổ phiếu là một tín hiệu, không phải bằng chứng duy nhất.
+> Tôi đổi nhẹ vì nhận ra không nên nói AI là "mối đe dọa" trực tiếp với GreenSM giống cách AI đe dọa một sản phẩm nội dung hay coding. Với GreenSM, AI là áp lực năng lực vận hành: nếu đối thủ hoặc chính khách hàng kỳ vọng phản hồi nhanh hơn, GreenSM phải có hệ thống học từ feedback nhanh hơn.
 >
-> Vì vậy verdict cuối tập trung vào thay đổi vĩnh viễn trong buyer expectation, không tập trung vào biến động giá ngắn hạn.
+> Vì vậy verdict cuối tập trung vào việc GreenSM cần dùng AI để giữ chất lượng dịch vụ khi scale, thay vì nói AI sẽ thay thế GreenSM.
 
 ### Verdict cuối cùng của tôi (phiên bản nộp)
 
 **Case này tổn thương trước AI vì:**  
-> Một phần giá trị của FPT Software nằm ở việc cung cấp kỹ sư và giờ công phần mềm quy mô lớn. AI coding tools làm phần việc coding/test/document generic nhanh hơn và rẻ hơn, khiến khách hàng outsource có lý do ép giá hoặc đòi hỏi output cao hơn với ít người hơn.
+> GreenSM vận hành dịch vụ có rất nhiều điểm chạm: app, tài xế, xe, giá, thời gian chờ, an toàn, CSKH. Khi quy mô lớn, phản hồi tiêu cực có thể xuất hiện ở nhiều kênh và lặp lại nhanh hơn khả năng xử lý thủ công.
 
 **Điều thay đổi vĩnh viễn là:**  
-> Trong dịch vụ phần mềm, "nhiều lập trình viên" không còn tự động đồng nghĩa với "nhiều giá trị". Chuẩn mới là AI-native delivery: nhanh hơn, có domain context, có quality/security governance và gắn với outcome kinh doanh.
+> Chất lượng dịch vụ gọi xe phải được quản lý bằng vòng lặp dữ liệu liên tục. Feedback và rating không chỉ để báo cáo, mà phải trở thành tín hiệu giúp phát hiện lỗi, ưu tiên xử lý và cải thiện trải nghiệm.
 
 **Nếu phải rút 1 bài học cho dự án của nhóm mình, tôi rút ra:**  
-> Đừng xây AI product dựa trên tác vụ generic dễ bị copy. Phải tìm đúng job đau nhất trong workflow, gắn AI vào nơi tạo outcome rõ, và có một moat ngoài model như dữ liệu riêng, quy trình tin cậy, domain expertise hoặc distribution.
+> AI chỉ đáng làm nếu nó biến phản hồi rời rạc thành hành động vận hành cụ thể: nhóm vấn đề, đo mức độ nghiêm trọng, chỉ ra nguyên nhân, gợi ý xử lý và theo dõi sau khi sửa.
 
 ## Checklist trước khi nộp
 
