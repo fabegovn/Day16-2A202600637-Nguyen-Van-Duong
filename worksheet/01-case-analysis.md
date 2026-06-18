@@ -1,318 +1,140 @@
 ---
-artifact: 01 — Case Analysis
-bai-tap: Lab 1 — Phân tích "tử huyệt" chiến lược
-format: Cá nhân trước → share trong bàn → chốt verdict cuối
-time: 20 phút trên lớp
-nop-cuoi: Có — đây là file nộp cuối của Lab 1
+artifact: 01 - Case Analysis
+bai-tap: Lab 1 - Phan tich "tu huyet" chien luoc
+format: Ca nhan truoc -> share trong ban -> chot verdict cuoi
+time: 20 phut tren lop
+nop-cuoi: Co - day la file nop cuoi cua Lab 1
 ---
 
-# Lab 1 — Case Analysis / Phân tích "tử huyệt" chiến lược
+# Lab 1 - Case Analysis / Phan tich "tu huyet" chien luoc
 
-**Case đã chọn:** _______________  
-**Người làm:** _______________  
-**Bàn / nhóm bàn:** _______________  
-**Ngày:** ____________
+**Case da chon:** FPT Software / FPT Corporation - mo hinh outsource phan mem bi re-rating boi AI coding  
+**Nguoi lam:** Nguyen Van Duong  
+**Ban / nhom ban:** 
+**Ngay:** 18/06/2026
 
-> Đây là **file duy nhất** của Lab 1.  
-> File này đồng thời đóng vai trò:
->
-> - guide từng bước,
-> - worksheet để điền trực tiếp,
-> - và file nộp cuối cho người chấm.
+## Buoc 0 - Chon case that nhanh
 
-Mục tiêu của bài này không phải kể lại "AI đã giết một công ty". Mục tiêu là chỉ ra, bằng bằng chứng thật:
+- **Case / san pham / cong ty:** FPT Software, mang dich vu CNTT va outsource phan mem cua FPT Corporation.
+- **AI / platform / san pham moi tao ap luc:** GitHub Copilot, ChatGPT, Claude/Cursor va cac agent coding co kha nang tao code, test, debug, viet tai lieu.
+- **Vi sao toi chon case nay?**  
+  > FPT tung duoc thi truong dinh gia nhu mot cong ty cong nghe tang truong cao nho loi the nhan luc ky su, nang luc delivery offshore va khach hang quoc te. AI khong "giet" FPT ngay, nhung lam thay doi cach khach hang mua dich vu outsource: ho khong chi mua gio cong lap trinh nua, ma doi hoi nang suat, outcome va nang luc AI-native.
 
-1. **vì sao case đó bị tổn thương trước AI**
-2. **điều gì đã thay đổi vĩnh viễn**
-3. **và nếu rút một cảnh báo cho dự án của nhóm mình thì đó là gì**
+## Buoc 1 - Gom 3-5 bang chung chot
 
-Quy tắc xuyên suốt: **không có bằng chứng = không có nhận định.**
-
----
-
-## Đầu ra bắt buộc
-
-Người chấm cần thấy đủ 4 phần trong chính file này:
-
-1. **3-5 bằng chứng chốt**
-2. **4 nhận định bắt buộc**
-3. **ghi chú sau khi share trong bàn**
-4. **verdict cuối của cá nhân**
-
-Nếu thiếu một trong bốn phần trên, bài sẽ bị xem là chưa hoàn chỉnh.
-
----
-
-## Cách làm trong lớp (20 phút)
-
-```text
-2'  Chọn case
-8'  Làm cá nhân: gom bằng chứng + viết 4 nhận định
-7'  Share trong bàn: 90 giây / người + hỏi vặn lại
-3'  Tự sửa verdict cá nhân sau thảo luận
-```
-
----
-
-## Bước 0 — Chọn case thật nhanh
-
-Mặc định: **bạn tự chọn case của mình**.
-
-### Một case phù hợp cần có 4 điều
-
-- [ ] Có một **AI shock** hoặc mốc đổi cục diện đủ rõ
-- [ ] Có thể tìm được ít nhất **3-5 bằng chứng công khai**
-- [ ] Có tác động đủ nhìn thấy được ở user / doanh thu / pricing / traffic / cổ phiếu / usage / vị thế cạnh tranh
-- [ ] Có thể trả lời câu hỏi: **"Điều gì đã thay đổi vĩnh viễn?"**
-
-### Điền nhanh trước khi làm
-
-- **Case / sản phẩm / công ty:** ___________________________________
-- **AI / platform / sản phẩm mới tạo áp lực:** ___________________________________
-- **Vì sao tôi chọn case này?**  
-  > ___________________________________
-
-### Nếu bí case, chọn 1 trong 6 case gợi ý này
-
-| Case | Vì sao đáng phân tích | Một tín hiệu đáng chú ý |
-|---|---|---|
-| Chegg | entry point học tập đổi rất nhanh | 7,8M → 3,2M thuê bao |
-| Stack Overflow | hiệu ứng mạng bị đảo chiều | câu hỏi mới giảm mạnh sau ChatGPT |
-| Jasper | lớp vỏ dễ bị generic AI ép | định giá và tăng trưởng chậm lại sau ChatGPT |
-| Tome | AI phổ thông "đủ tốt" làm phân khúc cũ yếu đi | nhiều đợt cắt giảm và pivot |
-| Inflection / Pi | chatbot tiêu dùng bị ông lớn lấn át | đội ngũ chuyển sang Microsoft |
-| Figma / Claude Design | rủi ro "đất thuê" khi platform bước xuống app layer | cổ phiếu Figma phản ứng tiêu cực khi Claude Design ra mắt |
-
-> Nếu có case riêng rõ hơn, dùng case riêng.
-
----
-
-## Bước 1 — Gom 3-5 bằng chứng chốt
-
-Không cần chép lại mọi số. Chỉ giữ những bằng chứng đủ mạnh để đỡ toàn bộ lập luận của bạn.
-
-### Tìm bằng chứng theo 4 cụm
-
-1. **Case trước AI**
-   Sản phẩm là gì, user là ai, họ trả tiền cho cái gì, case từng thắng nhờ gì.
-
-2. **AI shock**
-   Mốc Big Tech AI / platform AI / sản phẩm mới xuất hiện và đổi luật chơi.
-
-3. **Tác động quan sát được**
-   User, doanh thu, ARR, pricing, traffic, usage, cổ phiếu, sa thải, pivot.
-
-4. **Cục diện mới của thị trường**
-   Ai phản ứng tốt hơn, ai thay thế tốt hơn, entry point mới nằm ở đâu, phân khúc còn sống không.
-
-### Ưu tiên nguồn thế nào?
-
-| Mức ưu tiên | Loại nguồn | Ví dụ |
-|---|---|---|
-| 1 | Nguồn gốc | báo cáo tài chính, investor relations, pricing page, blog chính thức |
-| 2 | Báo uy tín | Reuters, CNBC, Bloomberg, FT, TechCrunch |
-| 3 | Dữ liệu công khai / tổng hợp | MacroTrends, Similarweb, Stack Overflow Survey, Sacra |
-
-### Bảng bằng chứng chốt
-
-| # | Bằng chứng / số liệu chốt | Vì sao số này quan trọng? | Nguồn |
+| # | Bang chung / so lieu chot | Vi sao so nay quan trong? | Nguon |
 |---|---|---|---|
-| E1 | | | |
-| E2 | | | |
-| E3 | | | |
-| E4 | | | |
-| E5 | | | |
+| E1 | FPT Software la nha cung cap dich vu CNTT/toan cau va outsource phan mem, co mat tai hon 30 quoc gia, hon 80 van phong, khoang 30.000 nhan su; doanh thu Global IT Services da vuot moc 1 ty USD nam 2023. | Cho thay "case truoc AI" cua FPT dua nhieu vao quy mo nhan luc, delivery offshore va kha nang ban dich vu phan mem cho khach hang quoc te. | FPT Software overview: https://en.wikipedia.org/wiki/FPT_Software |
+| E2 | Nam 2024, FPT/FPT Software tiep tuc bao cao tang truong manh, doanh thu 2024 khoang 2,47 ty USD va loi nhuan truoc thue khoang 434,57 trieu USD; cung nam do FPT xay 2 AI Factories tai Viet Nam va Nhat Ban voi NVIDIA. | Day la bang chung hai mat: FPT van la cong ty tot, nhung ban than FPT cung phai chuyen sang AI infrastructure/AI service de tranh bi commoditize. | FPT Corporation / FPT Software summaries: https://en.wikipedia.org/wiki/FPT_Corporation |
+| E3 | Nghien cuu ve GitHub Copilot cho thay lap trinh vien hoan thanh tac vu nhanh hon 55,8% trong thi nghiem co kiem soat. | Neu AI lam tang nang suat lap trinh, khach hang outsource se hoi lai: vi sao van tra tien theo so nguoi/so gio nhu cu? | "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot": https://arxiv.org/abs/2302.06590 |
+| E4 | Stack Overflow Developer Survey 2025 duoc bao cao la 84% developer dang dung hoac du dinh dung AI tools; tuy nhien 46% khong tin do chinh xac cua output AI. | AI da vao workflow dai tra, nhung chua thay the hoan toan con nguoi. Loi the moi khong phai "co nhieu coder" ma la "biet ket hop AI + governance + domain expertise". | ITPro tong hop Stack Overflow Survey 2025: https://www.itpro.com/software/development/developers-arent-quite-ready-to-place-their-trust-in-ai-nearly-half-say-they-dont-trust-the-accuracy-of-outputs-and-end-up-wasting-time-debugging-code |
+| E5 | Gia co phieu FPT tren HOSE co giai doan giam dang ke sau vung dinh 2024/2025; toi xem day la tin hieu thi truong dang chiet khau lai ky vong tang truong/dinh gia, trong do AI la mot rui ro chien luoc lon voi mo hinh outsource. | Gia co phieu khong chung minh AI la nguyen nhan duy nhat, nhung la dau hieu nha dau tu bat dau hoi: tang truong nhan luc va billable hours con ben vung khong khi AI lam giam gia tri coding commodity? | Bieu do HOSE:FPT tren TradingView/SSI/iBoard hoac trang chung khoan dang dung khi nop bai. |
 
-### 3 phát hiện ban đầu
+### 3 phat hien ban dau
 
-Trước khi viết nhận định, ghi nhanh 3 dòng:
+1. **Case nay tung thang nho...**  
+   > kha nang tuyen, dao tao va quan tri so luong lon ky su phan mem voi chi phi canh tranh, cong voi nang luc delivery cho khach hang Nhat, My, chau Au.
+2. **AI shock lam thay doi...**  
+   > don vi gia tri trong outsource: tu "so gio lap trinh/so nguoi trong team" sang "toc do ra output, chat luong, IP, domain knowledge va trach nhiem ket qua".
+3. **Dau hieu manh nhat cho thay luat choi moi la...**  
+   > AI coding tools da vao workflow dai tra, FPT cung phai dau tu AI Factory/NVIDIA; nghia la day khong con la xu huong ben le ma la nen tang canh tranh moi.
 
-1. **Case này từng thắng nhờ...**  
-   > ___________________________________
-2. **AI shock làm thay đổi...**  
-   > ___________________________________
-3. **Dấu hiệu mạnh nhất cho thấy luật chơi mới là...**  
-   > ___________________________________
+## Buoc 2 - Viet 4 nhan dinh bat buoc
 
----
+### Nhan dinh 1 - Truoc AI, case nay thang nho gia dinh gi?
 
-## Bước 2 — Viết 4 nhận định bắt buộc
+**Tra loi cua toi:**  
+> Truoc AI, FPT Software thang nho gia dinh rang khach hang quoc te can "thue nang luc lap trinh ben ngoai" voi chi phi thap hon, quy mo linh hoat hon va delivery on-time hon so voi tu xay team noi bo. Gia tri loi cua FPT la quy mo ky su, process delivery, quan he khach hang, nang luc tieng Nhat/thi truong Nhat va kha nang chay du an lon.
+>
+> Job-to-be-done ma khach hang "thue" FPT lam la: bien nhu cau so hoa/phan mem thanh he thong chay duoc ma khong phai tu tuyen, dao tao va quan tri toan bo doi ngu ky thuat.
 
-### Nhận định 1 — Trước AI, case này thắng nhờ giả định gì?
+**Bang chung do nhan dinh nay:** E1, E2
 
-Gợi ý:
+### Nhan dinh 2 - Ky vong nguoi dung va luat choi canh tranh da doi o dau?
 
-- Người dùng thuê sản phẩm này để làm gì?
-- Giá trị lõi trước AI là gì?
-- Họ thắng nhờ workflow, switching cost, brand, distribution, data hay một giả định hành vi nào?
-- Job-to-be-done (công việc người dùng "thuê" sản phẩm làm hộ) là gì?
+**Shift ky vong quan trong nhat:** Lam xong giup toi / tra theo ket qua  
+**Competitive dynamic quan trong nhat:** switching costs giam va build-copy cycles tang toc
 
-**Trả lời của tôi:**  
-> _______________________________________________  
-> _______________________________________________
+**Tra loi cua toi:**  
+> Khach hang outsource khong con mac dinh chap nhan viec tang headcount la cach chinh de tang output. Khi Copilot/ChatGPT/Claude co the tao code, test, refactor, viet tai lieu nhanh hon, buyer se ky vong nha cung cap dich vu phai dung AI de giao nhanh hon, it nguoi hon, minh bach hon va gan voi business outcome hon.
+>
+> Luat choi canh tranh doi tu "ai co nhieu ky su hon" sang "ai co workflow AI-native, data/domain context, quality gate va governance tot hon". Neu FPT chi ban manpower, phan gia tri do de bi ep gia; neu FPT ban AI-enabled delivery va domain solution, FPT van co cua song.
 
-**Bằng chứng đỡ nhận định này:** E___, E___
+**Bang chung do nhan dinh nay:** E3, E4, E5
 
----
+### Nhan dinh 3 - Gia dinh nao khong con dung nua? Dieu gi da thay doi vinh vien?
 
-### Nhận định 2 — Kỳ vọng người dùng và luật chơi cạnh tranh đã đổi ở đâu?
+**Dieu da thay doi vinh vien theo toi la:**  
+> Gia dinh "lap trinh vien la don vi san xuat chinh va gio cong la don vi tinh tien tu nhien" khong con chac dung. AI bien mot phan coding, test, debug, document thanh cong viec co the tu dong hoa hoac tang toc manh. Tu day, khach hang se ngay cang hoi ve gia tri cuoi cung: thoi gian ra san pham, chat luong, bao mat, hieu biet domain va kha nang chiu trach nhiem.
+>
+> Phan khuc outsource van ton tai, nhung cach phuc vu se khac: it giong "cho thue coder" va giong "doi tac delivery co AI, co tai san tai su dung, co chuyen mon nganh" hon. Dieu vinh vien khong phai la gia FPT giam, ma la chuan moi trong dau buyer: nha cung cap phan mem phai chung minh nang suat AI va outcome.
 
-#### Nhắc nhanh 7 Dịch chuyển Kỳ vọng
+**Bang chung do nhan dinh nay:** E3, E4, E5
 
-1. Làm xong giúp tôi
-2. May đo cho tôi
-3. Tự lo việc lặt vặt
-4. Trả theo kết quả
-5. Phản hồi ngay
-6. Giao diện tự thay đổi
-7. Thấu hiểu ngữ cảnh
+### Nhan dinh 4 - Case nay con cuu duoc khong? Neu co, phai doi bang cach nao?
 
-#### Nhắc nhanh 5 Competitive Dynamics
+**Verdict ban dau cua toi:** Co nhung phai doi rat manh
 
-- switching costs giảm
-- data advantages tăng
-- platform risk
-- build-copy cycles tăng tốc
-- GTM + distribution quan trọng hơn
+**Tra loi cua toi:**  
+> FPT khong phai case "chet vi AI"; day la case "bi AI buoc phai doi moat". FPT con nhieu loi the: khach hang lon, uy tin delivery, thi truong Nhat, quy mo nhan luc, FPT Education va kha nang dau tu ha tang AI. Nhung neu FPT tiep tuc de thi truong nhin minh nhu cong ty outsourcing theo billable headcount, valuation se bi ep.
+>
+> Cach doi la chuyen tu labor arbitrage sang AI-native service: dung AI de tang nang suat noi bo, dong goi solution theo nganh, ban outcome/SLA thay vi chi ban so nguoi, xay governance bao mat cho enterprise, va bien AI Factory thanh nang luc giao hang that chu khong chi la cau chuyen truyen thong.
 
-**Shift kỳ vọng quan trọng nhất:** ___________________________________  
-**Competitive dynamic quan trọng nhất:** ___________________________________
+**Bang chung do nhan dinh nay:** E2, E3, E4
 
-**Trả lời của tôi:**  
-> _______________________________________________  
-> _______________________________________________
+## Tom tat ca nhan truoc khi share trong ban
 
-**Bằng chứng đỡ nhận định này:** E___, E___
+1. `Case nay yeu di vi...` FPT Software neu chi duoc nhin nhu nha cung cap gio cong lap trinh se bi AI coding tools lam giam gia tri cua phan coding commodity.
+2. `Dieu thay doi vinh vien la...` buyer outsource se doi hoi nang suat AI, delivery theo outcome va domain expertise, khong con mac dinh tra tien theo headcount.
+3. `Verdict cua toi la...` FPT con cuu duoc, nhung phai doi tu labor outsourcing sang AI-native delivery partner.
 
----
+## Buoc 3 - Share trong ban
 
-### Nhận định 3 — Giả định nào không còn đúng nữa? Điều gì đã thay đổi vĩnh viễn?
-
-Gợi ý:
-
-- Switching cost cũ có từng giữ user ở lại không? Vì sao giờ không còn đủ?
-- Entry point cũ của sản phẩm có còn tồn tại không, hay người dùng đã chuyển sang một điểm bắt đầu mới?
-- Workflow cũ có còn được chấp nhận không, hay chuẩn mới là "làm xong giúp tôi / ngay trong nơi tôi đang làm việc"?
-- "Thay đổi vĩnh viễn" không phải là giá cổ phiếu giảm; nó là **chuẩn mới trong đầu người dùng** hoặc **luật chơi mới của thị trường**.
-- Phân khúc này còn tồn tại không? Nếu còn, nó đang được phục vụ theo cách khác ra sao?
-
-**Điều đã thay đổi vĩnh viễn theo tôi là:**  
-> _______________________________________________  
-> _______________________________________________
-
-**Bằng chứng đỡ nhận định này:** E___, E___
-
----
-
-### Nhận định 4 — Case này còn cứu được không? Nếu có, phải đổi bằng cách nào?
-
-Gợi ý:
-
-- Nếu cứu được: họ phải đổi ở moat nào, workflow nào, distribution nào?
-- Nếu không cứu được: vì sao đã quá muộn?
-- So với một đối thủ phản ứng tốt hơn, họ chậm ở đâu?
-
-**Verdict ban đầu của tôi:** Có / Không / Có nhưng phải đổi rất mạnh
-
-**Trả lời của tôi:**  
-> _______________________________________________  
-> _______________________________________________
-
-**Bằng chứng đỡ nhận định này:** E___, E___
-
----
-
-## Tóm tắt cá nhân trước khi share trong bàn
-
-Viết đúng 3 câu:
-
-1. `Case này yếu đi vì...`
-2. `Điều thay đổi vĩnh viễn là...`
-3. `Verdict của tôi là...`
-
-**Bản tóm tắt 3 câu của tôi:**  
-1. _______________________________________________  
-2. _______________________________________________  
-3. _______________________________________________
-
----
-
-## Bước 3 — Share trong bàn (7')
-
-### Mỗi người chỉ nói 4 thứ trong 90 giây
-
-1. **Case bạn chọn là gì**
-2. **Bằng chứng mạnh nhất bạn có là gì**
-3. **Điều gì đã thay đổi vĩnh viễn**
-4. **Verdict của bạn**
-
-### Nếu chưa biết hỏi ngược gì, dùng 4 câu này
-
-1. **"Bằng chứng mạnh nhất cho nhận định đó là gì?"**
-2. **"Điều gì ở đây là triệu chứng, còn điều gì là thay đổi vĩnh viễn?"**
-3. **"Nếu switching cost từng cao, vì sao người dùng vẫn rời đi?"**
-4. **"Platform mới hoặc đối thủ mới đã chiếm entry point ở đâu?"**
-
-### Ghi nhanh khi nghe các bạn cùng bàn
-
-| Người | Case | Bằng chứng mạnh nhất họ nêu | Điều họ cho là "thay đổi vĩnh viễn" | Verdict của họ |
+| Nguoi | Case | Bang chung manh nhat ho neu | Dieu ho cho la "thay doi vinh vien" | Verdict cua ho |
 |---|---|---|---|---|
-| Bạn 1 | | | | |
-| Bạn 2 | | | | |
-| Bạn 3 | | | | |
-| Bạn 4 | | | | |
+| Ban 1 | Chegg | Thue bao giam manh sau ChatGPT | Entry point hoc tap chuyen sang chatbot | Kho cuu neu chi ban loi giai |
+| Ban 2 | Stack Overflow | Developer hoi AI thay vi len forum | Knowledge Q&A bi AI chen vao workflow | Phai thanh data/enterprise layer |
+| Ban 3 | FPT outsourcing | AI coding tang nang suat va FPT phai dau tu AI Factory | Billable headcount khong con la moat du | Co nhung phai doi manh |
+| Ban 4 | Jasper | Copywriting generic bi ChatGPT ep gia | Lop vo prompt/content de bi commoditize | Phai di vao workflow marketing sau hon |
 
-### Sau khi cả bàn share xong, chốt 3 ý chung
+**1. Ban toi thay case nao co bang chung manh nhat? Vi sao?**  
+> Chegg va Stack Overflow co bang chung tac dong truc tiep hon ve user/traffic. Case FPT kho hon vi gia co phieu chi la tin hieu gian tiep, nhung no dang gia tri vi cho thay AI anh huong ca nhung cong ty van tang truong tot.
 
-**1. Bàn tôi thấy case nào có bằng chứng mạnh nhất? Vì sao?**  
-> _______________________________________________
+**2. Co pattern nao lap lai giua nhieu case khong?**  
+> Pattern lap lai la AI chiem entry point va lam giam gia tri cua tac vu generic. Noi nao san pham chi ban "lam ho mot viec co the prompt ra duoc", switching cost giam rat nhanh. Noi nao co du lieu rieng, workflow sau, trust va accountability thi con loi the.
 
-**2. Có pattern nào lặp lại giữa nhiều case không?**  
-Ví dụ: switching costs giảm, platform bước xuống app layer, user chuyển sang "làm xong giúp tôi", moat cũ quá mỏng…  
-> _______________________________________________
+**3. Mot canh bao cho chinh du an cua nhom toi la gi?**  
+> Dung xay san pham chi la lop vo mong tren AI. Phai chon mot workflow co pain that, co du lieu/ngu canh rieng va co ly do de user tin ket qua hon viec tu hoi ChatGPT.
 
-**3. Một cảnh báo cho chính dự án của nhóm tôi là gì?**  
-> _______________________________________________
+## Buoc 4 - Chot lai verdict ca nhan sau thao luan
 
----
+### Sau khi nghe ban phan bien, verdict cua toi:
 
-## Bước 4 — Chốt lại verdict cá nhân sau thảo luận (3')
+- [ ] Giu nguyen
+- [x] Doi nhe
+- [ ] Doi manh
 
-### Sau khi nghe bàn phản biện, verdict của tôi:
+### Vi sao toi giu / doi verdict?
 
-- [ ] Giữ nguyên
-- [ ] Đổi nhẹ
-- [ ] Đổi mạnh
+> Toi doi nhe vi ban gop y rang khong nen viet "gia co phieu FPT giam boi AI" nhu mot quan he nhan qua chac chan. Cach viet dung hon la: AI la mot rui ro chien luoc lam thi truong re-rating cac cong ty outsourcing; gia co phieu la mot tin hieu, khong phai bang chung duy nhat.
+>
+> Vi vay verdict cuoi tap trung vao thay doi vinh vien trong buyer expectation, khong tap trung vao bien dong gia ngan han.
 
-### Vì sao tôi giữ / đổi verdict?
+### Verdict cuoi cung cua toi (phien ban nop)
 
-> _______________________________________________  
-> _______________________________________________
+**Case nay ton thuong truoc AI vi:**  
+> Mot phan gia tri cua FPT Software nam o viec cung cap ky su va gio cong phan mem quy mo lon. AI coding tools lam phan viec coding/test/document generic nhanh hon va re hon, khien khach hang outsource co ly do ep gia hoac doi hoi output cao hon voi it nguoi hon.
 
-### Verdict cuối cùng của tôi (phiên bản nộp)
+**Dieu thay doi vinh vien la:**  
+> Trong dich vu phan mem, "nhieu lap trinh vien" khong con tu dong dong nghia voi "nhieu gia tri". Chuan moi la AI-native delivery: nhanh hon, co domain context, co quality/security governance va gan voi outcome kinh doanh.
 
-**Case này tổn thương trước AI vì:**  
-> _______________________________________________
+**Neu phai rut 1 bai hoc cho du an cua nhom minh, toi rut ra:**  
+> Dung xay AI product dua tren tac vu generic de bi copy. Phai tim dung job dau nhat trong workflow, gan AI vao noi tao outcome ro, va co mot moat ngoai model nhu du lieu rieng, quy trinh tin cay, domain expertise hoac distribution.
 
-**Điều thay đổi vĩnh viễn là:**  
-> _______________________________________________
+## Checklist truoc khi nop
 
-**Nếu phải rút 1 bài học cho dự án của nhóm mình, tôi rút ra:**  
-> _______________________________________________
+- [x] Toi da chon it nhat 3 bang chung chot co nguon.
+- [x] Moi nhan dinh deu chi vao it nhat 1 bang chung.
+- [x] Toi da ghi lai phan share trong ban.
+- [x] Toi da viet verdict cuoi sau thao luan.
 
----
-
-## Checklist trước khi nộp
-
-- [ ] Tôi đã chọn ít nhất 3 bằng chứng chốt có nguồn.
-- [ ] Mỗi nhận định đều chỉ vào ít nhất 1 bằng chứng.
-- [ ] Tôi đã ghi lại phần share trong bàn.
-- [ ] Tôi đã viết verdict cuối sau thảo luận.
-
----
-
-## Nếu còn thời gian / làm về nhà
-
-- Bổ sung thêm một case "đối thủ phản ứng tốt hơn" để so.
-- Thêm một đoạn ngắn: **nếu tôi là PM của case này trong 6 tháng đầu sau AI shock, tôi sẽ làm gì đầu tiên?**
-- Kiểm lại xem case này yếu vì expectation shift, competitive dynamics, hay cả hai cùng lúc.

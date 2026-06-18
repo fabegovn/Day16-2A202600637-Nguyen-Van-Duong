@@ -1,498 +1,201 @@
 ---
-artifact: 02 — JTBD Project Analysis
-bai-tap: Lab 2 — Dùng JTBD để soi lại dự án nhóm
-format: Theo nhóm dự án → share trong bàn → chốt hypothesis cuối
-time: 25 phút trên lớp
-nop-cuoi: Có — đây là file nộp cuối của Lab 2
-companion-reference: Strategyn_JTBD_Playbook.pdf (giảng viên gửi kèm)
+artifact: 02 - JTBD Project Analysis
+bai-tap: Lab 2 - Dung JTBD de soi lai du an nhom
+format: Theo nhom du an -> share trong ban -> chot hypothesis cuoi
+time: 25 phut tren lop
+nop-cuoi: Co - day la file nop cuoi cua Lab 2
+companion-reference: Strategyn_JTBD_Playbook.pdf
 ---
 
-# Lab 2 — JTBD Project Analysis / Dùng JTBD để soi lại dự án nhóm
+# Lab 2 - JTBD Project Analysis / Dung JTBD de soi lai du an nhom
 
-**Tên dự án / sản phẩm:** _______________  
+**Ten du an / san pham:** AI Delivery Copilot cho team outsource phan mem
 
-> Đây là **file duy nhất** của Lab 2.  
-> File này đồng thời đóng vai trò:
->
-> - guide từng bước,
-> - worksheet để điền trực tiếp,
-> - và file nộp cuối cho người chấm.
+## Buoc 0 - Khoanh dung 1 lat cat cua du an
 
-Mục tiêu của bài này không phải brainstorm thêm thật nhiều tính năng AI.
-Mục tiêu là:
+- **Du an cua nhom toi la:** AI Delivery Copilot giup team outsource phan mem bien yeu cau khach hang thanh plan, task, test case va bao cao tien do co kiem soat.
+- **Lat cat toi chon de phan tich hom nay la:** Giup Project Manager / Tech Lead trong cong ty outsource xu ly yeu cau moi tu khach hang enterprise truoc khi giao cho developer.
+- **Vi sao toi chon lat cat nay:**  
+  > Day la diem dau va co tac dong lon: neu hieu sai requirement, toan bo sprint bi tre, estimate sai, dev lam lai nhieu va khach hang mat tin tuong.
 
-1. **xác định người dùng thực sự đang cố hoàn thành job gì**
-2. **hiểu họ đang dùng giải pháp nào để hoàn thành job đó hôm nay**
-3. **chỉ ra AI nên chen vào đúng bước nào trong workflow**
-4. **viết ra product hypothesis và assumption còn phải validate**
+## Buoc 1 - Project Snapshot
 
-Quy tắc xuyên suốt: **không rõ job thì đừng bàn feature.**
+1. **Nhom toi dang nghi minh dang giai quyet van de gi?**  
+   > Team outsource ton nhieu thoi gian doc requirement, hoi lai khach hang, tach task, estimate, viet acceptance criteria va cap nhat tien do.
 
----
+2. **Nguoi dung chinh hien nhom dang nham toi la ai?**  
+   > Project Manager / Tech Lead phu trach mot team outsource 5-20 developer.
 
-## Cần mở song song 2 thứ
+3. **Hien tai nguoi dung do dang giai quyet van de nay bang cach nao?**  
+   > Doc tai lieu khach hang thu cong, hop voi BA/dev, viet ticket tren Jira, dung template Excel/Google Docs, hoi ChatGPT rieng le va tu kiem tra lai.
 
-1. **File này** — để điền trực tiếp
-2. **`Strategyn_JTBD_Playbook.pdf`** — giảng viên gửi kèm
+## Buoc 2 - Market Context
 
-### Cách dùng playbook cho đúng
+1. **Ai dang gap van de nay?**  
+   > PM/Tech Lead trong cong ty outsource phan mem lam du an cho khach hang quoc te.
 
-Bạn **không cần đọc hết 48 trang**.  
-Trong bài này, playbook chủ yếu dùng để tra 4 thứ:
+2. **Van de xuat hien trong hoan canh nao?**  
+   > Khi khach hang gui requirement moi, change request hoac feedback gap truoc sprint planning.
 
-1. **Cách nhìn thị trường qua JTBD lens**
-2. **`Job executor` là ai**
-3. **Cách viết `job statement`: `verb + object + contextual clarifier`**
-4. **8 bước của `job map`**:
-   `define -> locate -> prepare -> confirm -> execute -> monitor -> modify -> conclude`
+3. **Hien tai ho dang dung giai phap thay the nao?**  
+   > Jira, Confluence, Excel, Google Docs, hop noi bo, ChatGPT/Copilot dung ca nhan, va kinh nghiem cua senior.
 
-### 2 chương nên mở nhiều nhất
+4. **Vi sao day la thoi diem dang giai?**  
+   > AI coding lam khach hang ky vong delivery nhanh hon, nhung bottleneck thuc te chuyen len buoc hieu dung requirement, tach viec va kiem soat chat luong.
 
-- **Chapter 2 — Define Your Market**
-- **Chapter 3 — Build Your Job Map**
+### Tom tat market context
 
-> Dùng playbook để **tra framework và ví dụ**.  
-> Dùng file này để **làm bài và chốt output**.
+> Outsource phan mem khong chi can viet code nhanh; can bien yeu cau mo ho cua khach hang thanh cong viec ro, co uu tien, co acceptance criteria va co risk tracking.  
+> Khi AI lam coding nhanh hon, loi the cua nha cung cap dich vu nam o kha nang dieu phoi workflow, domain context va dam bao chat luong.  
+> Neu PM/Tech Lead van lam buoc phan tich requirement thu cong, team se khong tan dung duoc AI va van bi tre o dau sprint.
 
----
+## Buoc 3 - Job Executor
 
-## Đầu ra bắt buộc
+- **Job executor cua du an nay la:** Project Manager / Tech Lead trong team outsource phan mem.
+- **Vi sao toi tin day la nguoi truc tiep "thue" giai phap de lam job:**  
+  > Ho la nguoi nhan requirement, quyet dinh cach tach task, hoi lai khach hang, phan cong dev va chiu trach nhiem khi sprint tre hoac deliver sai.
 
-Người chấm cần thấy đủ 6 phần trong chính file này:
+## Buoc 4 - Core JTBD
 
-1. **`Project slice` + market context**
-2. **`Job executor` + `core JTBD`**
-3. **3 `job stories`**
-4. **`JTBD lite map` + pain points**
-5. **`AI leverage point` + `product hypothesis`**
-6. **`Assumptions to validate` + verdict cuối sau thảo luận**
+**Core JTBD ban nhap:**  
+> Bien requirement cua khach hang thanh ke hoach delivery ro rang bang AI.
 
-Nếu thiếu một trong sáu phần trên, bài sẽ bị xem là chưa hoàn chỉnh.
+**Cac tu solution toi dang lo nhet vao cau:** AI
 
----
+**Core JTBD cuoi cung:**  
+> Chuyen yeu cau khach hang thanh ke hoach delivery ro rang, co the giao viec va kiem soat duoc truoc khi sprint bat dau.
 
-## Cách làm trong lớp (25 phút)
+## Buoc 5 - 3 Job Stories
 
-```text
-3'  Chốt 1 lát cắt cụ thể của dự án
-7'  Viết market context + job executor + core JTBD
-6'  Viết 3 job stories + current alternatives
-6'  Điền JTBD lite map + AI leverage point + hypothesis
-3'  Share trong bàn và sửa version cuối
-```
-
-> Nếu dự án làm theo nhóm, cả nhóm có thể thảo luận chung.  
-> Nhưng file này vẫn nên có **version chốt rõ ràng** của người nộp.
-
----
-
-## Bước 0 — Khoanh đúng 1 lát cắt của dự án
-
-Phần lớn dự án nhóm viết quá rộng ở bước này, rồi sau đó mọi thứ mơ hồ theo.
-
-### Khoanh đúng 1 lát cắt theo 4 điểm
-
-- [ ] **1 nhóm người dùng chính**
-- [ ] **1 hoàn cảnh / tình huống rõ**
-- [ ] **1 job cốt lõi**
-- [ ] **1 workflow đủ cụ thể để vẽ ra được**
-
-### Điền nhanh trước khi làm
-
-- **Dự án của nhóm tôi là:** ___________________________________
-- **Lát cắt tôi chọn để phân tích hôm nay là:** ___________________________________
-- **Vì sao tôi chọn lát cắt này:**  
-  > ___________________________________
-
-### Viết quá rộng vs viết sắc hơn
-
-| Viết quá rộng | Viết sắc hơn |
-|---|---|
-| Giúp SME dùng AI để marketing | Giúp chủ shop online phản hồi câu hỏi trước mua hàng nhanh và nhất quán trong giờ cao điểm |
-| Dùng AI để làm slide | Tạo bản nháp deck nội bộ mạch lạc cho buổi họp gấp trong thời gian rất ngắn |
-| AI cho tuyển dụng | Giúp recruiter sàng lọc CV đầu vào nhanh hơn trước vòng gọi sơ bộ |
-
-> Nếu bạn không mô tả được **một hoàn cảnh cụ thể**, khả năng cao bạn đang viết quá rộng.
-
----
-
-## Bước 1 — Viết `Project Snapshot`
-
-### Tóm tắt dự án trong 3 dòng
-
-1. **Nhóm tôi đang nghĩ mình đang giải quyết vấn đề gì?**  
-   > ___________________________________
-
-2. **Người dùng chính hiện nhóm đang nhắm tới là ai?**  
-   > ___________________________________
-
-3. **Hiện tại người dùng đó đang giải quyết vấn đề này bằng cách nào?**  
-   > ___________________________________
-
----
-
-## Bước 2 — Viết `Market Context`
-
-Ở đây chưa cần solution. Chỉ cần bối cảnh thị trường đủ để hiểu:
-**ai đang gặp chuyện gì, trong hoàn cảnh nào, và vì sao bây giờ đáng giải.**
-
-### Trả lời 4 câu ngắn
-
-1. **Ai đang gặp vấn đề này?**  
-   > ___________________________________
-
-2. **Vấn đề xuất hiện trong hoàn cảnh nào?**  
-   > ___________________________________
-
-3. **Hiện tại họ đang dùng giải pháp thay thế nào?**  
-   > ___________________________________
-
-4. **Vì sao đây là thời điểm đáng giải?**  
-   > ___________________________________
-
-### Tóm tắt market context trong 3-4 dòng
-
-> _______________________________________________  
-> _______________________________________________
-
----
-
-## Bước 3 — Xác định `Job Executor`
-
-`Job executor` là người **trực tiếp dùng một giải pháp để hoàn thành job**.
-
-### Đừng nhầm với:
-
-- người mua tiền nhưng không trực tiếp làm job
-- người ảnh hưởng quyết định
-- cả một công ty hay một phòng ban quá rộng
-
-### Gợi ý viết cho đúng
-
-- Sai hoặc quá rộng: `SME`, `doanh nghiệp`, `thị trường`
-- Tốt hơn: `chủ shop online`, `nhân viên CSKH`, `recruiter`, `sales ops manager`
-
-### Điền
-
-- **Job executor của dự án này là:** ___________________________________
-- **Vì sao tôi tin đây là người trực tiếp "thuê" giải pháp để làm job:**  
-  > ___________________________________
-
----
-
-## Bước 4 — Viết `Core JTBD`
-
-`Core JTBD` là công việc cốt lõi người dùng đang cố hoàn thành.
-
-### Công thức gợi ý
-
-```text
-[verb] + [object] + [contextual clarifier]
-```
-
-### Ví dụ
-
-- Chưa tốt: `trả lời inbox bằng AI`
-- Tốt hơn: `giải quyết câu hỏi trước mua hàng nhanh và chính xác trong giờ cao điểm`
-
-- Chưa tốt: `dùng AI để viết nội dung`
-- Tốt hơn: `tạo bản nháp nội dung chiến dịch phù hợp với brand trong thời gian rất ngắn`
-
-### 3 tiêu chí tự kiểm
-
-- [ ] Nếu bỏ tool hiện tại đi, job này vẫn còn tồn tại
-- [ ] Trong câu không có tên sản phẩm, AI, chatbot, app, màn hình
-- [ ] Câu đang mô tả **điều user muốn hoàn thành**, không phải thứ product đang làm
-
-### Bản nháp 1
-
-**Core JTBD bản nháp:**  
-> _______________________________________________
-
-### Gạch bỏ từ solution nếu có
-
-- Các từ solution tôi đang lỡ nhét vào câu: _________________________________
-
-### Bản chốt
-
-**Core JTBD cuối cùng:**  
-> _______________________________________________
-
----
-
-## Bước 5 — Viết 3 `Job Stories`
-
-Nếu `core JTBD` là job ở mức cốt lõi, thì `job story` giúp bạn thấy
-**job này xuất hiện trong hoàn cảnh nào**.
-
-### Format
-
-```text
-When [trigger], I want to [motivation], so I can [outcome].
-```
-
-### Ví dụ
-
-`When inbox đổ dồn vào buổi tối, tôi muốn có câu trả lời nhất quán ngay lập tức, so I can không mất đơn vì phản hồi chậm.`
-
-### Bảng 3 job stories
-
-| # | Trigger / When | Motivation / I want to | Outcome / so I can | Điều story này cho thấy |
+| # | Trigger / When | Motivation / I want to | Outcome / so I can | Dieu story nay cho thay |
 |---|---|---|---|---|
-| JS1 | | | | |
-| JS2 | | | | |
-| JS3 | | | | |
+| JS1 | When khach hang gui requirement moi bang email/tai lieu dai | I want to tom tat scope, cau hoi mo va rui ro chinh | so I can phan hoi nhanh ma khong bo sot diem quan trong | Pain nam o buoc doc-hieu va clarify requirement |
+| JS2 | When sprint planning sap dien ra nhung requirement con mo ho | I want to tach thanh epic/story/task kem acceptance criteria | so I can giao viec cho dev va QA ma it phai lam lai | Pain nam o prepare/confirm truoc khi execute |
+| JS3 | When khach hang thay doi scope giua sprint | I want to thay tac dong len timeline, task va risk | so I can thuong luong lai deadline/effort co co so | Pain nam o modify va monitor change |
 
-### Tự kiểm nhanh
+## Buoc 6 - Current Alternatives
 
-- [ ] Mỗi story là một **tình huống thật**, không phải slogan chung chung
-- [ ] 3 story không trùng hệt nhau
-- [ ] Sau khi đọc 3 story, tôi hình dung được lúc nào product của mình đáng xuất hiện
-
----
-
-## Bước 6 — Liệt kê `Current Alternatives`
-
-Qua JTBD lens, đối thủ không chỉ là app cùng ngành.
-Đối thủ là **bất kỳ thứ gì user đang "thuê" để làm job**:
-
-- thao tác tay
-- file Excel / Google Sheets
-- intern / nhân viên
-- agency
-- ChatGPT / Claude / Gemini
-- công cụ chuyên dụng khác
-- hoặc thậm chí là **không làm gì cả**
-
-### Bảng alternatives
-
-| Alternative hiện tại | User đang thuê nó để làm gì? | Nó làm tốt gì? | Nó fail ở đâu? | Switching cost hiện tại cao hay thấp? |
+| Alternative hien tai | User dang thue no de lam gi? | No lam tot gi? | No fail o dau? | Switching cost hien tai cao hay thap? |
 |---|---|---|---|---|
-| Alt 1 | | | | |
-| Alt 2 | | | | |
-| Alt 3 | | | | |
+| Jira + Confluence | Ghi task, tai lieu, trang thai | Chuan enterprise, team quen dung | Khong tu hieu requirement, khong tu tao cau hoi/risk | Cao vi da nam trong workflow |
+| Hop noi bo voi BA/dev senior | Lam ro scope va estimate | Co context va judgement nguoi that | Ton thoi gian, phu thuoc senior, kho scale | Trung binh |
+| ChatGPT/Copilot ca nhan | Tom tat, viet draft ticket/test case | Nhanh, re, linh hoat | Roi rac, kho bao mat, khong gan voi Jira/context du an | Thap |
 
-### Kết luận nhanh
+**Neu project cua toi bien mat hom nay, user nhieu kha nang se quay ve:**  
+> Jira/Confluence + hop noi bo + dung ChatGPT rieng le de tao draft.
 
-**Nếu project của tôi biến mất hôm nay, user nhiều khả năng sẽ quay về:**  
-> _______________________________________________
+## Buoc 7 - JTBD Lite Map
 
----
-
-## Bước 7 — Điền `JTBD Lite Map`
-
-Đây là bản rút gọn của `job map` trong playbook.
-
-### Mục tiêu
-
-Không phải để làm consultant workshop hoàn chỉnh.  
-Mục tiêu là nhìn ra:
-
-1. workflow hiện tại của user đi qua những bước nào
-2. bước nào đang đau nhất
-3. AI có nên chen vào đó không
-
-### 8 bước tham chiếu từ playbook
-
-1. `Define`
-2. `Locate`
-3. `Prepare`
-4. `Confirm`
-5. `Execute`
-6. `Monitor`
-7. `Modify`
-8. `Conclude`
-
-> Không nhất thiết bước nào cũng quan trọng như nhau trong dự án của bạn.  
-> Nếu ít liên quan, ghi `N/A`, đừng để trống.
-
-### Bảng JTBD Lite Map
-
-| Step | Trong workflow này user đang cố làm gì? | Hôm nay họ đang dùng gì? | Friction / pain hiện tại | Mức đau |
+| Step | Trong workflow nay user dang co lam gi? | Hom nay ho dang dung gi? | Friction / pain hien tai | Muc dau |
 |---|---|---|---|---|
-| Define | | | | Low / Med / High |
-| Locate | | | | Low / Med / High |
-| Prepare | | | | Low / Med / High |
-| Confirm | | | | Low / Med / High |
-| Execute | | | | Low / Med / High |
-| Monitor | | | | Low / Med / High |
-| Modify | | | | Low / Med / High |
-| Conclude | | | | Low / Med / High |
+| Define | Xac dinh muc tieu, scope, deadline, stakeholder | Email, brief, hop kickoff | Requirement dai, mo ho, nhieu assumption an | High |
+| Locate | Tim tai lieu, API, ticket cu, decision cu | Confluence, Drive, Jira | Context nam rai rac nhieu noi | Med |
+| Prepare | Tach epic/story/task, viet AC, estimate | Jira, Excel, hop team | Ton thoi gian, chat luong phu thuoc senior | High |
+| Confirm | Hoi lai khach hang, chot scope va acceptance | Email, meeting notes | Cau hoi khong day du, de miss edge case | High |
+| Execute | Dev code, QA test | IDE, GitHub, CI/CD, Copilot | AI ho tro code nhung neu task sai thi van lam lai | Med |
+| Monitor | Theo doi tien do, blocker, scope creep | Jira dashboard, daily standup | Bao cao tre, risk phat hien muon | Med |
+| Modify | Xu ly change request giua sprint | Hop gap, sua ticket thu cong | Kho thay tac dong len timeline/effort | High |
+| Conclude | Tong ket delivery, demo, lesson learned | Report, retrospective | Knowledge khong duoc tai su dung tot | Low |
 
-### Chốt 2 bước đau nhất
+**Buoc dau nhat #1:** Prepare  
+**Buoc dau nhat #2:** Confirm
 
-**Bước đau nhất #1:** _________________________________  
-**Bước đau nhất #2:** _________________________________
+**Vi sao day la noi dang chu y nhat:**  
+> Neu prepare/confirm sai, AI coding o buoc execute chi giup team lam nhanh mot viec sai.  
+> Day cung la noi PM/Tech Lead co nhieu tai lieu, ngu canh va quy tac de AI ho tro, nhung van can nguoi chot de tranh sai requirement.
 
-**Vì sao đây là nơi đáng chú ý nhất:**  
-> _______________________________________________  
-> _______________________________________________
+## Buoc 8 - AI Leverage Point
 
----
-
-## Bước 8 — Chỉ ra `AI Leverage Point`
-
-Sau khi map workflow, mới hỏi:
-**AI nên vào đâu, với vai trò gì, và vì sao là ở đó?**
-
-### Nhắc nhanh
-
-- Đừng nhét AI vào chỉ vì "có AI thì nghe hay"
-- Nếu pain lớn nhất không nằm ở chỗ AI giải tốt, hãy thành thật ghi ra
-- Nếu current alternative đã đủ tốt, project cần xem lại
-
-### Bảng leverage point
-
-| Step | AI nên giúp bằng cách nào? | Vì sao AI hợp ở đây? | Rủi ro chính nếu dùng AI |
+| Step | AI nen giup bang cach nao? | Vi sao AI hop o day? | Rui ro chinh neu dung AI |
 |---|---|---|---|
-| 1 | | | |
-| 2 | | | |
+| Prepare | Doc requirement, de xuat epic/story/task, acceptance criteria, test ideas va estimate range | Day la tac vu nhieu ngon ngu tu nhien, co pattern lap lai, can draft nhanh | Hallucinate scope, estimate ao, bo sot rui ro domain |
+| Confirm | Tao danh sach cau hoi clarify, risk log va impact neu khong chot | AI gioi trong viec soat lo hong va doi chieu checklist | Hoi qua nhieu cau chung chung, lam khach hang roi |
 
-### Kết luận nhanh
+**AI leverage point quan trong nhat cua du an toi la:**  
+> Bien requirement mo ho thanh draft backlog + cau hoi clarify + risk log truoc sprint planning.
 
-**AI leverage point quan trọng nhất của dự án tôi là:**  
-> _______________________________________________
+**Vi sao khong phai o buoc khac:**  
+> Execute da co Copilot/Cursor ho tro code. Pain lon hon nam truoc khi code: hieu sai, tach sai, confirm thieu. Neu chen AI vao prepare/confirm, team giam rework va tang do tin cua delivery.
 
-**Vì sao không phải ở bước khác:**  
-> _______________________________________________
+## Buoc 9 - Product Hypothesis
 
----
+> Neu chung ta giup PM/Tech Lead chuyen yeu cau khach hang thanh backlog, acceptance criteria va cau hoi clarify tot hon o buoc Prepare/Confirm,  
+> bang cach dung AI doc requirement, truy xuat context du an va de xuat risk/task co human approval,  
+> thi ho se chuyen tu Jira + hop thu cong + ChatGPT rieng le sang AI Delivery Copilot tich hop voi workflow du an,  
+> vi ho tiet kiem thoi gian planning, giam rework va co bang chung ro hon khi thuong luong scope voi khach hang.
 
-## Bước 9 — Viết `Product Hypothesis`
+### Tin hieu som neu hypothesis nay dung
 
-Bây giờ mới đến lúc viết hypothesis.
+1. PM/Tech Lead san sang dua requirement that vao tool va dung draft ticket trong sprint planning.
+2. Thoi gian tu luc nhan requirement den luc co backlog draft/cau hoi clarify giam it nhat 30%.
 
-### Công thức gợi ý
+## Buoc 10 - Assumptions to Validate
 
-```text
-Nếu chúng ta giúp [job executor] làm [job / sub-job] tốt hơn ở bước [x],
-bằng cách [AI leverage],
-thì họ sẽ chuyển từ [current alternative] sang [hướng giải pháp của nhóm],
-vì [giá trị rõ nhất].
-```
-
-### Bản hypothesis của tôi
-
-> _______________________________________________  
-> _______________________________________________
-
-### Tín hiệu sớm nếu hypothesis này đúng
-
-1. _______________________________________________
-2. _______________________________________________
-
----
-
-## Bước 10 — Liệt kê `Assumptions to Validate`
-
-Job story chưa có research vẫn chỉ là **giả thuyết tốt hơn**, chưa phải sự thật.
-
-### 5 assumption thường đáng kiểm
-
-- Tôi đã chọn đúng `job executor`
-- Pain này thật sự đủ đau và xảy ra đủ thường xuyên
-- User sẽ đổi khỏi alternative hiện tại nếu có giải pháp tốt hơn
-- AI thực sự tạo giá trị ở step tôi chọn
-- User đủ tin kết quả AI để đưa vào workflow thật
-
-### Bảng assumptions
-
-| Assumption | Vì sao assumption này rủi ro? | Tôi đang có bằng chứng gì? | Cần validate bằng cách nào tiếp theo? |
+| Assumption | Vi sao assumption nay rui ro? | Toi dang co bang chung gi? | Can validate bang cach nao tiep theo? |
 |---|---|---|---|
-| A1 | | | |
-| A2 | | | |
-| A3 | | | |
-| A4 | | | |
-| A5 | | | |
+| A1: PM/Tech Lead la job executor dung | Neu BA moi la nguoi lam chinh, product se sai user | Suy luan tu workflow outsource | Phong van 5 PM/Tech Lead va 5 BA |
+| A2: Prepare/Confirm la pain du dau | Neu pain that nam o sales/contract hoac QA, leverage point sai | Logic tu rework trong sprint | Diary study 2 sprint, do thoi gian planning/rework |
+| A3: User tin AI neu co human approval | Neu AI bi xem la qua rui ro, adoption thap | AI hien da duoc dung ca nhan | Prototype voi audit trail va approval flow |
+| A4: Tich hop Jira/Confluence du de tao gia tri | Neu context nam trong email/call/Slack qua nhieu, tool thieu du lieu | Alternatives hien tai dung Jira/Confluence | Test import du lieu that tu 2-3 du an |
+| A5: Khach hang chap nhan cach lam AI-assisted | Neu hop dong/bao mat cam dua tai lieu vao AI, bi chan | Enterprise co lo ngai data | Validate voi chinh sach bao mat va option private deployment |
 
-### Assumption nguy hiểm nhất nếu tôi đang sai
+**Assumption nguy hiem nhat neu toi dang sai:**  
+> Pain Prepare/Confirm khong du lon hoac khong xay ra thuong xuyen; neu sai, product chi la tool tao ticket dep chu khong giam duoc rework that.
 
-> _______________________________________________
+## Buoc 11 - Share trong ban
 
----
-
-## Bước 11 — Share trong bàn (3')
-
-### Mỗi người / mỗi nhóm chỉ nói 4 thứ
-
-1. **Job executor của bạn là ai**
-2. **Core JTBD của bạn là gì**
-3. **Step đau nhất đang nằm ở đâu**
-4. **AI leverage point + assumption rủi ro nhất là gì**
-
-### Nếu chưa biết hỏi ngược gì, dùng 4 câu này
-
-1. **"Câu JTBD này có đang lỡ nhét solution vào không?"**
-2. **"Alternative hiện tại của user là gì, và tại sao họ chưa bỏ nó?"**
-3. **"Pain mạnh nhất nằm ở bước nào trong workflow, có chắc AI giải tốt được không?"**
-4. **"Assumption nào nếu sai thì cả hypothesis sẽ sập?"**
-
-### Ghi nhanh sau khi nghe bàn phản biện
-
-| Ý phản biện tôi nghe được | Nó chạm vào phần nào? | Tôi sẽ giữ / sửa gì? |
+| Y phan bien toi nghe duoc | No cham vao phan nao? | Toi se giu / sua gi? |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| "Dung goi user la cong ty outsource, phai chon PM/Tech Lead hoac BA." | Job executor | Giu PM/Tech Lead lam executor, BA la collaborator |
+| "AI tao ticket thi de copy; moat nam o context du an va approval flow." | AI leverage point | Sua hypothesis de nhan manh tich hop Jira/Confluence va human approval |
+| "Neu requirement sai tu dau, AI co the lam sai nhanh hon." | Risk / assumptions | Them assumption ve trust, audit trail va validate bang prototype |
 
----
+## Buoc 12 - Chot version cuoi sau thao luan
 
-## Bước 12 — Chốt version cuối sau thảo luận
+### Sau khi nghe phan bien, toi thay doi gi?
 
-### Sau khi nghe phản biện, tôi thay đổi gì?
+- [x] Giu nguyen `job executor`
+- [ ] Sua `job executor`
+- [ ] Giu nguyen `core JTBD`
+- [x] Sua `core JTBD`
+- [x] Giu nguyen `AI leverage point`
+- [ ] Sua `AI leverage point`
+- [ ] Giu nguyen `product hypothesis`
+- [x] Sua `product hypothesis`
 
-- [ ] Giữ nguyên `job executor`
-- [ ] Sửa `job executor`
-- [ ] Giữ nguyên `core JTBD`
-- [ ] Sửa `core JTBD`
-- [ ] Giữ nguyên `AI leverage point`
-- [ ] Sửa `AI leverage point`
-- [ ] Giữ nguyên `product hypothesis`
-- [ ] Sửa `product hypothesis`
+### Vi sao toi giu / sua?
 
-### Vì sao tôi giữ / sửa?
+> Toi giu PM/Tech Lead vi day la nguoi chiu trach nhiem delivery va ra quyet dinh trong sprint planning.  
+> Toi sua JTBD va hypothesis de bo bot tu "AI" khoi job statement, dong thoi nhan manh context du an, approval flow va risk log thay vi chi tao ticket tu dong.
 
-> _______________________________________________  
-> _______________________________________________
-
-### Version cuối cùng tôi nộp
+### Version cuoi cung toi nop
 
 **Job executor:**  
-> _______________________________________________
+> Project Manager / Tech Lead trong team outsource phan mem.
 
 **Core JTBD:**  
-> _______________________________________________
+> Chuyen yeu cau khach hang thanh ke hoach delivery ro rang, co the giao viec va kiem soat duoc truoc khi sprint bat dau.
 
-**2 bước đau nhất trong workflow:**  
-> _______________________________________________
+**2 buoc dau nhat trong workflow:**  
+> Prepare va Confirm.
 
-**AI leverage point chính:**  
-> _______________________________________________
+**AI leverage point chinh:**  
+> Doc requirement va context du an de tao backlog draft, acceptance criteria, cau hoi clarify va risk log co human approval.
 
 **Product hypothesis:**  
-> _______________________________________________
+> Neu chung ta giup PM/Tech Lead lam ro requirement va tao backlog co the giao viec o buoc Prepare/Confirm bang AI co context du an va approval flow, ho se chuyen tu Jira + hop thu cong + ChatGPT rieng le sang AI Delivery Copilot vi no giam thoi gian planning va giam rework trong sprint.
 
-**Assumption cần validate đầu tiên:**  
-> _______________________________________________
+**Assumption can validate dau tien:**  
+> Prepare/Confirm co phai pain du lon, xay ra du thuong xuyen va dang lam team mat tien/thoi gian vi rework hay khong.
 
----
+## Checklist truoc khi nop
 
-## Checklist trước khi nộp
+- [x] Toi da khoanh dung 1 lat cat cu the cua du an.
+- [x] Toi da phan biet duoc `job executor` voi buyer / influencer.
+- [x] `Core JTBD` cua toi khong nhet solution vao cau.
+- [x] Toi da viet du 3 `job stories`.
+- [x] Toi da dien `JTBD lite map` va khoanh ra 2 buoc dau nhat.
+- [x] Toi da chi ra `AI leverage point` thay vi nhay thang vao feature list.
+- [x] Toi da ghi ro `assumptions to validate`.
+- [x] Toi da sua version cuoi sau khi share trong ban.
 
-- [ ] Tôi đã khoanh đúng 1 lát cắt cụ thể của dự án.
-- [ ] Tôi đã phân biệt được `job executor` với buyer / influencer.
-- [ ] `Core JTBD` của tôi không nhét solution vào câu.
-- [ ] Tôi đã viết đủ 3 `job stories`.
-- [ ] Tôi đã điền `JTBD lite map` và khoanh ra 2 bước đau nhất.
-- [ ] Tôi đã chỉ ra `AI leverage point` thay vì nhảy thẳng vào feature list.
-- [ ] Tôi đã ghi rõ `assumptions to validate`.
-- [ ] Tôi đã sửa version cuối sau khi share trong bàn.
-
----
-
-## Nếu còn thời gian / làm về nhà
-
-- Phỏng vấn nhanh 1 người dùng thật để kiểm xem `job story` nào là sát nhất.
-- So sánh `current alternatives` với project của nhóm theo 3 tiêu chí: nhanh hơn, rẻ hơn, tin hơn.
-- Tự hỏi lại một câu khó: **nếu không dùng AI, project này còn tạo giá trị không?**
-- Nếu câu trả lời là "không", hãy xem lại liệu nhóm đang giải **job thật** hay chỉ đang tìm chỗ để nhét AI.
